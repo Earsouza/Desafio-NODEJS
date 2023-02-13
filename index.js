@@ -24,7 +24,6 @@ app.get('/', (req, res) => {
     connection.query('SELECT * FROM EMPRESA', (err, result =>{
         res.send(result);
     }));
-
 });
 
 app.listen(PORT, () => console.log(`Server running on port: http://localhost:${PORT})`));
