@@ -1,7 +1,7 @@
 # Desafio-NODEJS
 
 Versões:
-Mysql - v5.7.36 
+Mysql - v3.1.2
 Node.JS - v18.14.0
 Express.js - v4.18.2
 
