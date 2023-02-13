@@ -1,5 +1,5 @@
 import express from 'express';
-import { createLicenca, getLicencas, getLicenca, deleteLicenca, updateLicenca } from '../controllers/licenca.js';
+import { createLicenca, getLicencas, getLicenca, deleteLicenca, updateLicenca } from '../controllers/licenca-controller.js';
 
 const router = express.Router();
 

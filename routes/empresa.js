@@ -1,5 +1,5 @@
 import express from 'express';
-import { createEmpresa, getEmpresas, getEmpresa, deleteEmpresa, updateEmpresa } from '../controllers/empresa.js';
+import { createEmpresa, getEmpresas, getEmpresa, deleteEmpresa, updateEmpresa } from '../controllers/empresa-controller.js';
 
 const router = express.Router();
 

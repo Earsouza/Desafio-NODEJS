@@ -11,7 +11,7 @@ export const createEmpresa = (req, res) => {
 
     empresas.push({ ...empresa, id: uuidv4() });
 
-    res.send(`Users with the name ${empresa.razaoSocial} added in Database!`);
+    res.send(`Empresa with the name ${empresa.razaoSocial} added in Database!`);
 }
 
 export const getEmpresa = (req, res) => {
@@ -27,7 +27,7 @@ export const deleteEmpresa = (req, res) => {
 
     empresas = empresas.filter((empresa) => empresa.id !== id);
 
-    res.send(`User with the id ${id} deleted from database.`);
+    res.send(`Empresa with the id ${id} deleted from database.`);
 }
 
 export const updateEmpresa = (req, res) => {
@@ -44,6 +44,6 @@ export const updateEmpresa = (req, res) => {
     if (bairro) empresa.bairro = bairro;
     if (complemento) empresa.complemento = complemento;
     
-    res.send(`User with the ${id} has been updated`);
+    res.send(`Empresa with the ${id} has been updated`);
 
 }
