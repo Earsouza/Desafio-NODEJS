@@ -1,12 +1,16 @@
-# Desafio-NODEJS
+# Desafio-NODEJS - Ambisis
 
-Versões:
+## Tecnologias e Dependências
 Mysql - v3.1.2
 Node.JS - v18.14.0
 Express.js - v4.18.2
+Nodemon - 2.0.20
 
+# Orientações de Instalação e execução
 
-- Orientações de instalação e execução do ambiente em localhost;
+1. É necessário clonar o repositório com o comando `git clone https://github.com/Earsouza/Desafio-NODEJS` 
+2. Entrar no diretório do projeto com `cd b2wdigital-testebackend-bruno (para windows)`
+3. Instalar todas as dependências utilizando `npm install dependencies`
+4. Recomendo instalar o nodemon, utilizando `npm install nodemon`
+5. Após isso rodar a aplicação utilizando `nodemon src/index.js`
 
-
-- Orientações de execução do banco de dados, com sua estrutura (incluir Dump SQL das tabelas);
