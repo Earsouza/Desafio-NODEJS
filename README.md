@@ -8,9 +8,19 @@
 
 # Orientações de Instalação e execução
 
-1. É necessário clonar o repositório com o comando `git clone https://github.com/Earsouza/Desafio-NODEJS` 
-2. Entrar no diretório do projeto
-3. Instalar todas as dependências utilizando `npm install dependencies`
-4. Recomendo instalar o nodemon, utilizando `npm install nodemon`
-5. Após isso rodar a aplicação utilizando `nodemon src/index.js`
+1. Clone o repositório com o comando:
+git clone https://github.com/Earsouza/Desafio-NODEJS.git
 
+2. Entre no diretório do projeto:
+cd Desafio-NODEJS
+
+3. Instale todas as dependências usando o seguinte comando:
+npm install
+
+4. Recomendo instalar o nodemon para facilitar o desenvolvimento, para isso, execute o seguinte comando:
+npm install -g nodemon
+
+5. Depois de instalar as dependências, execute o seguinte comando para rodar a aplicação:
+nodemon src/index.js
+
+Lembrando que é necessário ter o node.js e npm (gerenciador de pacotes do node) instalados na máquina para executar a aplicação.
