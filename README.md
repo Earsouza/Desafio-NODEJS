@@ -1,10 +1,10 @@
 # Desafio-NODEJS - Ambisis
 
 ## Tecnologias e Dependências
-Mysql - v3.1.2
-Node.JS - v18.14.0
-Express.js - v4.18.2
-Nodemon - 2.0.20
+- Mysql - v3.1.2
+- Node.JS - v18.14.0
+- Express.js - v4.18.2
+- Nodemon - 2.0.20
 
 # Orientações de Instalação e execução
 
