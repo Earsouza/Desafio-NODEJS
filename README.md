@@ -5,6 +5,7 @@
 - Node.JS - v18.14.0
 - Express.js - v4.18.2
 - Nodemon - 2.0.20
+- Npm UUID 
 
 # Orientações de Instalação e execução
 
