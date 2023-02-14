@@ -28,30 +28,38 @@ Lembrando que é necessário ter o node.js e npm (gerenciador de pacotes do node
 
 # Funcionamento 
 
-- Listagem de empresas - GET: http://localhost:8080/empresa
-- Listagem de licencas - GET: http://localhost:8080/licenca
+O sistema possui as seguintes funcionalidades de API para empresas e licenças:
 
-. Em caso de sucesso retorna todos as empresas/licenças já cadastrados no banco de dados, cada planeta no formato JSON.
+.Listagem:
+- Empresas: GET http://localhost:8080/empresa
+- Licenças: GET http://localhost:8080/licenca
 
-- Adicionar de empresas - POST: http://localhost:8080/empresa
-- Adicionar de licencas - POST: http://localhost:8080/licenca
+Ao realizar uma requisição GET, será retornado todas as empresas ou licenças já cadastradas no banco de dados, em formato JSON.
 
-. Adiciona uma licença ao banco de dados, sendo necessário inserir razaoSocial, cnpj, cep, cidade, estado, bairro, complemento. O ID é gerado automaticamente.
+.Adição:
+- Adição de empresas: POST http://localhost:8080/empresa
+- Adição de licenças: POST http://localhost:8080/licenca
 
-- Buscar empresa por ID - GET: http://localhost:8080/empresa/{inserir-id-aqui}
-- Buscar licenca por ID - GET: http://localhost:8080/licenca/{inserir-id-aqui}
+Ao realizar uma requisição POST, será adicionado uma nova empresa ou licença ao banco de dados, sendo necessário inserir os dados: razão social, cnpj, cep, cidade, estado, bairro, complemento. O ID será gerado automaticamente.
 
-. Utiliza o Id gerado automaticamente quando a licença ou empresa é adicionada ao banco de dados. Retorna o arquivo no formato JSON com sucesso caso exista.
+.Busca por ID:
+- Buscar empresa por ID: GET http://localhost:8080/empresa/{inserir-id-aqui}
+- Buscar licença por ID: GET http://localhost:8080/licenca/{inserir-id-aqui}
 
-- Deletar uma empresa por ID - DELETE: http://localhost:8080/empresa/{inserir-id-aqui}
-- Deletar uma licenca por ID - DELETE: http://localhost:8080/licenca/{inserir-id-aqui}
+Ao realizar uma requisição GET com um ID específico, será retornado a empresa ou licença correspondente ao ID, em formato JSON.
 
-. Remove a empresa ou licença utilizando o Id que foi gerado automaticamente, utilizando o método DELETE.
+.Deleção:
+- Deletar uma empresa por ID: DELETE http://localhost:8080/empresa/{inserir-id-aqui}
+- Deletar uma licença por ID: DELETE http://localhost:8080/licenca/{inserir-id-aqui}
 
-- Alterar uma empresa por ID - PATCH: http://localhost:8080/empresa/{inserir-id-aqui}
-- Alterar uma licenca por ID - PATCH: http://localhost:8080/licenca/{inserir-id-aqui}
+Ao realizar uma requisição DELETE com um ID específico, será deletada a empresa ou licença correspondente ao ID.
 
-. Altera a empresa ou licença utilizando o Id que foi gerado automaticamente, utilizando o método PATCH.
+.Alteração:
+- Alterar uma empresa por ID: PATCH http://localhost:8080/empresa/{inserir-id-aqui}
+- Alterar uma licença por ID: PATCH http://localhost:8080/licenca/{inserir-id-aqui}
+
+Ao realizar uma requisição PATCH com um ID específico, será alterada a empresa ou licença correspondente ao ID.
+Observação: A integração com o banco de dados não foi finalizada dentro do prazo estipulado, mas o projeto será atualizado assim que estiver concluído.
 
 Obs.: Não foi possível finalizar a integração com o banco dentro do prazo estipulado porém segue o que foi desenvolvido até o momento. Vou atualizar esse projeto quando finalizar o que foi solicitado. 
 
