@@ -32,7 +32,7 @@ CREATE TABLE `empresa` (
   `bairro` varchar(255) NOT NULL,
   `complemento` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41,6 +41,7 @@ CREATE TABLE `empresa` (
 
 LOCK TABLES `empresa` WRITE;
 /*!40000 ALTER TABLE `empresa` DISABLE KEYS */;
+INSERT INTO `empresa` VALUES (1,'Empresa XYZ','00.000.000/0001-01','00000-000','Cidade','Estado','Bairro','Complemento'),(2,'Empresa ABC','00.000.000/0002-02','00000-000','Blumenau','Santa-Catarina','Garcia','Casa');
 /*!40000 ALTER TABLE `empresa` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -60,7 +61,7 @@ CREATE TABLE `licenca_ambiental` (
   `validade` date NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id_empresa` (`id_empresa`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -69,6 +70,7 @@ CREATE TABLE `licenca_ambiental` (
 
 LOCK TABLES `licenca_ambiental` WRITE;
 /*!40000 ALTER TABLE `licenca_ambiental` DISABLE KEYS */;
+INSERT INTO `licenca_ambiental` VALUES (1,1,'ABC-123','Órgão Ambiental X','2023-01-01','2023-12-31');
 /*!40000 ALTER TABLE `licenca_ambiental` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -89,4 +91,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-02-12 23:11:57
+-- Dump completed on 2023-02-13 22:01:30
